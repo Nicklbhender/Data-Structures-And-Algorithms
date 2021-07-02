@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/LinkedList.h
+iostream
+C:/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/iostream
+stdexcept
+C:/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/stdexcept
+
+C:/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/main.cpp
+iostream
+-
+LinkedList.h
+C:/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/LinkedList.h
+

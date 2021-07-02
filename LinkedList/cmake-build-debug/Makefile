@@ -126,33 +126,6 @@ LinkedList\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LinkedList.dir\build
 .PHONY : LinkedList\fast
 
-LinkedList.obj: LinkedList.cpp.obj
-
-.PHONY : LinkedList.obj
-
-# target to build an object file
-LinkedList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LinkedList.dir\LinkedList.cpp.obj
-.PHONY : LinkedList.cpp.obj
-
-LinkedList.i: LinkedList.cpp.i
-
-.PHONY : LinkedList.i
-
-# target to preprocess a source file
-LinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LinkedList.dir\LinkedList.cpp.i
-.PHONY : LinkedList.cpp.i
-
-LinkedList.s: LinkedList.cpp.s
-
-.PHONY : LinkedList.s
-
-# target to generate assembly for a file
-LinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LinkedList.dir\LinkedList.cpp.s
-.PHONY : LinkedList.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -189,9 +162,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LinkedList
-	@echo ... LinkedList.obj
-	@echo ... LinkedList.i
-	@echo ... LinkedList.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

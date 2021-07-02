@@ -79,38 +79,17 @@ CMakeFiles\LinkedList.dir\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\LinkedList.dir\main.cpp.s /c C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\main.cpp
 <<
 
-CMakeFiles\LinkedList.dir\LinkedList.cpp.obj: CMakeFiles\LinkedList.dir\flags.make
-CMakeFiles\LinkedList.dir\LinkedList.cpp.obj: ..\LinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LinkedList.dir/LinkedList.cpp.obj"
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\LinkedList.dir\LinkedList.cpp.obj /FdCMakeFiles\LinkedList.dir\ /FS -c C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\LinkedList.cpp
-<<
-
-CMakeFiles\LinkedList.dir\LinkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedList.dir/LinkedList.cpp.i"
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\LinkedList.dir\LinkedList.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\LinkedList.cpp
-<<
-
-CMakeFiles\LinkedList.dir\LinkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedList.dir/LinkedList.cpp.s"
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\LinkedList.dir\LinkedList.cpp.s /c C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\LinkedList.cpp
-<<
-
 # Object files for target LinkedList
 LinkedList_OBJECTS = \
-"CMakeFiles\LinkedList.dir\main.cpp.obj" \
-"CMakeFiles\LinkedList.dir\LinkedList.cpp.obj"
+"CMakeFiles\LinkedList.dir\main.cpp.obj"
 
 # External object files for target LinkedList
 LinkedList_EXTERNAL_OBJECTS =
 
 LinkedList.exe: CMakeFiles\LinkedList.dir\main.cpp.obj
-LinkedList.exe: CMakeFiles\LinkedList.dir\LinkedList.cpp.obj
 LinkedList.exe: CMakeFiles\LinkedList.dir\build.make
 LinkedList.exe: CMakeFiles\LinkedList.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LinkedList.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LinkedList.exe"
 	"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\LinkedList.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\LinkedList.dir\objects1.rsp @<<
  /out:LinkedList.exe /implib:LinkedList.lib /pdb:C:\Users\nickb\Documents\GitHub\Data-Structures---Algorithms-\LinkedList\cmake-build-debug\LinkedList.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
