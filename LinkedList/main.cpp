@@ -5,14 +5,11 @@ using namespace std;
 int main() {
     LinkedList<int> numList;
 
-    numList.insert(1);
-    numList.insert(2);
-    numList.insert(3);
-    numList.insert(4);
+    numList.insertAt(0, 1);
+    numList.insertAt(1, 2);
+    numList.insertAt(2, 3);
+    numList.insertAt(3, 4);
     numList.insert(5);
-
-    numList.remove(4);
-
 
     numList.display();
 

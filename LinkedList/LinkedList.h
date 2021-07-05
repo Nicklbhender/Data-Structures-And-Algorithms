@@ -35,6 +35,8 @@ public:
 
     void display();
 
+    int sizeOf();
+
 };
 
 template<typename T>
@@ -71,26 +73,34 @@ void LinkedList<T>::insert(T pData) {
 
 template<typename T>
 void LinkedList<T>::insertAt(int idx, T pData) {
-    if(idx < 0) {
-        cout << "Insertion Error: Index cannot be less than 0" << endl;
+    if(idx < 0 || idx > sizeOf()) {
+        cout << "Insertion Error: Index Out of Bounds" << endl;
     } else {
-        Node *trav = head;
-        while (idx > 0 && trav->next != nullptr) {
-            trav = trav->next;
-            idx--;
-        }
-
-        if (trav->next == nullptr) {
-            trav->next = new Node();
-            trav->next->data = pData;
+        if(idx == 0) {
+            if(head == nullptr) {
+                head = new Node();
+                head->data = pData;
+            } else {
+                Node* nNode = new Node();
+                nNode->data = pData;
+                nNode->next = head;
+                head = nNode;
+            }
         } else {
-            Node *temp = new Node();
+            Node *trav = head;
+            Node *trail = trav;
 
-            temp->data = trav->data;
-            temp->next = trav->next;
+            while(idx > 0) {
+                trail = trav;
+                trav = trav->next;
+                idx--;
+            }
 
-            trav->data = pData;
-            trav->next = temp;
+            Node* nNode = new Node();
+            nNode->data = pData;
+
+            trail->next = nNode;
+            nNode->next = trav;
         }
     }
 }
@@ -124,8 +134,8 @@ void LinkedList<T>::remove(T pData) {
 
 template<typename T>
 void LinkedList<T>::removeAt(int idx) {
-    if(idx < 0) {
-        cout << "Remove Error: Index cannot be less than 0" << endl;
+    if(idx < 0 || idx >= sizeOf()) {
+        cout << "Remove Error: Index Out of Bounds" << endl;
     } else if(head == nullptr) {
         cout << "List is empty" << endl;
     } else if(idx == 0) {
@@ -134,21 +144,14 @@ void LinkedList<T>::removeAt(int idx) {
         Node* trav = head;
         Node* trail = trav;
 
-        while (idx > 0 && trav != nullptr) {
+        while (idx > 0) {
             trail = trav;
             trav = trav->next;
             idx--;
-            if(trav == nullptr) {
-                break;
-            }
-        }
 
-        if(trav == nullptr) {
-            cout << "Remove Error: Idx out of range" << endl;
-        } else {
-            trail->next = trav->next;
-            delete(trav);
         }
+        trail->next = trav->next;
+        delete(trav);
     }
 }
 
@@ -165,7 +168,16 @@ void LinkedList<T>::display() {
     }
 }
 
-
+template<typename T>
+int LinkedList<T>::sizeOf() {
+    Node* trav = head;
+    int size = 0;
+    while(trav != nullptr) {
+        trav = trav->next;
+        size++;
+    }
+    return size;
+}
 
 
 #endif //LINKEDLIST_LINKEDLIST_H
