@@ -1,0 +1,55 @@
+The system is: Linux - 4.4.0-19041-Microsoft - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/3.20.5/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/3.20.5/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_af3a2/fast && /usr/bin/make  -f CMakeFiles/cmTC_af3a2.dir/build.make CMakeFiles/cmTC_af3a2.dir/build
+make[1]: Entering directory '/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af3a2.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_af3a2.dir/testCCompiler.c.o -c /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_af3a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af3a2.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_af3a2.dir/testCCompiler.c.o -o cmTC_af3a2 
+make[1]: Leaving directory '/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b5ecd/fast && /usr/bin/make  -f CMakeFiles/cmTC_b5ecd.dir/build.make CMakeFiles/cmTC_b5ecd.dir/build
+make[1]: Entering directory '/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b5ecd.dir/testCXXCompiler.cxx.o
+/usr/bin/c++    -o CMakeFiles/cmTC_b5ecd.dir/testCXXCompiler.cxx.o -c /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_b5ecd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5ecd.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b5ecd.dir/testCXXCompiler.cxx.o -o cmTC_b5ecd 
+make[1]: Leaving directory '/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/CMakeTmp'
+
+
+

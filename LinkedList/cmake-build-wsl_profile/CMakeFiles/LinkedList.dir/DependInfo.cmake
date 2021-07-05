@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/main.cpp" "/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-debug/CMakeFiles/LinkedList.dir/main.cpp.o"
+  "/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/main.cpp" "/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles/LinkedList.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-debug
+-- Build files have been written to: /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile

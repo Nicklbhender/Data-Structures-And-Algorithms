@@ -39,7 +39,13 @@ public:
 
 template<typename T>
 LinkedList<T>::~LinkedList() {
-
+    Node* trav = head;
+    Node* trail = trav;
+    while(trav != nullptr) {
+        trav = trav->next;
+        delete(trail);
+        trail = trav;
+    }
 }
 
 template<typename T>
@@ -48,7 +54,7 @@ void LinkedList<T>::insert(T pData) {
 
     // If head is null (no data present in list), initialize head with parameter data
     if(head == nullptr) {
-        head = new Node;
+        head = new Node();
         head->data = pData;
         // If head isn't null (populated list), insert at end of current list
     } else {
@@ -57,7 +63,7 @@ void LinkedList<T>::insert(T pData) {
         while(trav->next != nullptr) {
             trav = trav->next;
         }
-        trav->next = new Node;
+        trav->next = new Node();
         trav->next->data = pData;
     }
 
@@ -75,10 +81,10 @@ void LinkedList<T>::insertAt(int idx, T pData) {
         }
 
         if (trav->next == nullptr) {
-            trav->next = new Node;
+            trav->next = new Node();
             trav->next->data = pData;
         } else {
-            Node *temp = new Node;
+            Node *temp = new Node();
 
             temp->data = trav->data;
             temp->next = trav->next;
@@ -111,7 +117,7 @@ void LinkedList<T>::remove(T pData) {
             cout << "Remove Error: Item not found in list" << endl;
         } else {
             trail->next = trav->next;
-            trav = nullptr;
+            delete(trav);
         }
     }
 }
@@ -141,7 +147,7 @@ void LinkedList<T>::removeAt(int idx) {
             cout << "Remove Error: Idx out of range" << endl;
         } else {
             trail->next = trav->next;
-            trav = nullptr;
+            delete(trav);
         }
     }
 }
