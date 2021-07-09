@@ -1,3 +1,11 @@
+/*
+ * Name: Nick Bhend
+ * Version: 1.1
+ * Date Last Modified: 7/9/2021
+ * Description: Driver for LinkedList class. Contains main method, which contains some basic examples of the functions
+ * of the LinkedList class.
+ */
+
 #include <iostream>
 #include "LinkedList.h"
 using namespace std;
@@ -31,6 +39,10 @@ int main() {
     cout << "String List: " << endl;
     strList.display();
     cout << endl;
+
+    cout << "Reversed Number List: " << endl;
+    numList.reverse();
+    numList.display();
 
     return 0;
 }

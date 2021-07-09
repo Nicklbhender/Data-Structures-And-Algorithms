@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/Driver.cpp
+iostream
+-
+LinkedList.h
+/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/LinkedList.h
+
 /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/LinkedList.h
 iostream
 /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/iostream
 stdexcept
 /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/stdexcept
-
-/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/main.cpp
-iostream
--
-LinkedList.h
-/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/LinkedList.h
 

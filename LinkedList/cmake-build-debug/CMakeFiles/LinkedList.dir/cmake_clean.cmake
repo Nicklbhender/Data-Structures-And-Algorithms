@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LinkedList.dir/main.cpp.o"
+  "CMakeFiles/LinkedList.dir/Driver.cpp.o"
   "LinkedList"
   "LinkedList.pdb"
 )

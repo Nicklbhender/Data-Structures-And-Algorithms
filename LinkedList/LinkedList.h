@@ -1,11 +1,11 @@
 /*
  * Name: Nick Bhend
- * Version: 1.0
- * Date Last Modified: 7/7/2021
+ * Version: 1.1
+ * Date Last Modified: 7/9/2021
  * Description: The LinkedList class allows for the creation of LinkedList objects, which can be added to, removed from,
- * and displayed. LinkedList objects can also report their size to the user. LinkedList objects contain a Node struct,
- * which defines Nodes that make up each LinkedList object, as well as a Node pointer head, the start of each individual
- * list. 
+ * reversed, and displayed. LinkedList objects can also report their size to the user. LinkedList objects contain a Node
+ * struct, which defines Nodes that make up each LinkedList object, as well as a Node pointer head, the start of each
+ * individual list.
  */
 
 #ifndef LINKEDLIST_LINKEDLIST_H
@@ -56,6 +56,9 @@ public:
 
     // Size Method (Returns Size of a List)
     int sizeOf();
+
+    // Reverse Method (Reverses the Order of a List)
+    void reverse();
 
 };
 
@@ -167,25 +170,34 @@ void LinkedList<T>::insertAt(int idx, T pData) {
  */
 template<typename T>
 void LinkedList<T>::remove(T pData) {
+    // If head is null (empty list), return 'List is empty' message
     if(head == nullptr) {
         cout << "List is empty" << endl;
+    // If head's data is equal to pData (head is removal target), set head to head's next
     } else if(head->data == pData) {
         head = head->next;
+    // Otherwise (removing from middle/end of list)...
     } else {
+        // Initialize traversal and trailing Nodes
         Node* trav = head;
         Node* trail = trav;
-
+        // While trav's data doesn't match pData...
         while(trav->data != pData) {
+            // Update trail's value to trav's value
             trail = trav;
+            // Iterate trav
             trav = trav->next;
+            // If trav is null (end of list reached), break
             if(trav == nullptr) {
                 break;
             }
         }
-
+        // If trav is null (item was not found in list), return not found message
         if(trav == nullptr) {
             cout << "Remove Error: Item not found in list" << endl;
+        // If item was found in list...
         } else {
+            // Set trailing Node's next to trav's next and delete trav
             trail->next = trav->next;
             delete(trav);
         }
@@ -199,22 +211,30 @@ void LinkedList<T>::remove(T pData) {
  */
 template<typename T>
 void LinkedList<T>::removeAt(int idx) {
+    // If idx is less than 0 or greater than the size of the current list, return out of bounds error
     if(idx < 0 || idx >= sizeOf()) {
         cout << "Remove Error: Index Out of Bounds" << endl;
+    // If list is empty, return 'List is empty' message
     } else if(head == nullptr) {
         cout << "List is empty" << endl;
+    // If removing from the start of the list, set head to its next pointer
     } else if(idx == 0) {
         head = head->next;
+    // If removing from the middle/end of the list...
     } else {
+        // Initialize traversal and trailing Nodes
         Node* trav = head;
         Node* trail = trav;
-
+        // While idx is greater than 0 (position within list not yet reached)...
         while (idx > 0) {
+            // Set trailing Node to traversal Node
             trail = trav;
+            // Iterate traversal Node
             trav = trav->next;
+            // Decrement idx
             idx--;
-
         }
+        // Set trailing Node's next to trav's next and delete trav
         trail->next = trav->next;
         delete(trav);
     }
@@ -234,7 +254,7 @@ void LinkedList<T>::display() {
     } else {
         // Initialize traversal Node
         Node* trav = head;
-        // While traversal Node isn't null (end of list not reached)...
+        // While traversal Node isn't null (end of list not yet reached)...
         while(trav != nullptr) {
             // Print traversal Node data
             cout << trav->data << endl;
@@ -255,7 +275,7 @@ int LinkedList<T>::sizeOf() {
     Node* trav = head;
     // Initialize size variable with starting value 0
     int size = 0;
-    // While traversal Node isn't null (end of list not reached)...
+    // While traversal Node isn't null (end of list not yet reached)...
     while(trav != nullptr) {
         // Iterate to next Node
         trav = trav->next;
@@ -264,6 +284,31 @@ int LinkedList<T>::sizeOf() {
     }
     // Return size
     return size;
+}
+
+/*
+ * Purpose: Reverses the Node-order of a list.
+ * Description: Reverses the Node-order of a list by reversing the link pointers between each Node within a list.
+ */
+template<typename T>
+void LinkedList<T>::reverse() {
+    // Initialize traversal Node
+    Node* trav = head;
+    // Initialize trailing Node to hold Node previous to traversal Node
+    Node* trail = nullptr;
+    // While traversal Node isn't null (end of list not yet reached)...
+    while(trav != nullptr) {
+        // Initialize next Node to hold next Node to iterate to
+        Node* next = trav->next;
+        // Reverse trav's next pointer by pointing it to trailing Node
+        trav->next = trail;
+        // Iterate trailing Node to trav's current Node
+        trail = trav;
+        // Iterate trav to next Node in the list
+        trav = next;
+    }
+    // Set head to trailing Node (new head of the reversed list)
+    head = trail;
 }
 
 #endif //LINKEDLIST_LINKEDLIST_H

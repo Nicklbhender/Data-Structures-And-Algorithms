@@ -66,27 +66,27 @@ include CMakeFiles/LinkedList.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/LinkedList.dir/flags.make
 
-CMakeFiles/LinkedList.dir/main.cpp.o: CMakeFiles/LinkedList.dir/flags.make
-CMakeFiles/LinkedList.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LinkedList.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedList.dir/main.cpp.o -c /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/main.cpp
+CMakeFiles/LinkedList.dir/Driver.cpp.o: CMakeFiles/LinkedList.dir/flags.make
+CMakeFiles/LinkedList.dir/Driver.cpp.o: ../Driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LinkedList.dir/Driver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedList.dir/Driver.cpp.o -c /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/Driver.cpp
 
-CMakeFiles/LinkedList.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedList.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/main.cpp > CMakeFiles/LinkedList.dir/main.cpp.i
+CMakeFiles/LinkedList.dir/Driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedList.dir/Driver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/Driver.cpp > CMakeFiles/LinkedList.dir/Driver.cpp.i
 
-CMakeFiles/LinkedList.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedList.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/main.cpp -o CMakeFiles/LinkedList.dir/main.cpp.s
+CMakeFiles/LinkedList.dir/Driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedList.dir/Driver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/Driver.cpp -o CMakeFiles/LinkedList.dir/Driver.cpp.s
 
 # Object files for target LinkedList
 LinkedList_OBJECTS = \
-"CMakeFiles/LinkedList.dir/main.cpp.o"
+"CMakeFiles/LinkedList.dir/Driver.cpp.o"
 
 # External object files for target LinkedList
 LinkedList_EXTERNAL_OBJECTS =
 
-LinkedList: CMakeFiles/LinkedList.dir/main.cpp.o
+LinkedList: CMakeFiles/LinkedList.dir/Driver.cpp.o
 LinkedList: CMakeFiles/LinkedList.dir/build.make
 LinkedList: CMakeFiles/LinkedList.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LinkedList"
