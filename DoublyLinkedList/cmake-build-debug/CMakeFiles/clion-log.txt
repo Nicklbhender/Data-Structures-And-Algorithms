@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/cmake-build-debug

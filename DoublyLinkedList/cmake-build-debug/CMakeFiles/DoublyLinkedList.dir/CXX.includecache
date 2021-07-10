@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/DoublyLinkedList.h
+iostream
+/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/iostream
+
+/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/Driver.cpp
+iostream
+-
+DoublyLinkedList.h
+/mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/DoublyLinkedList.h
+

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList
+CMAKE_SOURCE_DIR = /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile
+CMAKE_BINARY_DIR = /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/cmake-build-debug/CMakeFiles /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/LinkedList/cmake-build-wsl_profile/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nickb/Documents/GitHub/Data-Structures---Algorithms-/DoublyLinkedList/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LinkedList
+# Target rules for targets named DoublyLinkedList
 
 # Build rule for target.
-LinkedList: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LinkedList
-.PHONY : LinkedList
+DoublyLinkedList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DoublyLinkedList
+.PHONY : DoublyLinkedList
 
 # fast build rule for target.
-LinkedList/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/build
-.PHONY : LinkedList/fast
+DoublyLinkedList/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedList.dir/build.make CMakeFiles/DoublyLinkedList.dir/build
+.PHONY : DoublyLinkedList/fast
 
 Driver.o: Driver.cpp.o
 .PHONY : Driver.o
 
 # target to build an object file
 Driver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Driver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedList.dir/build.make CMakeFiles/DoublyLinkedList.dir/Driver.cpp.o
 .PHONY : Driver.cpp.o
 
 Driver.i: Driver.cpp.i
@@ -142,7 +142,7 @@ Driver.i: Driver.cpp.i
 
 # target to preprocess a source file
 Driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Driver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedList.dir/build.make CMakeFiles/DoublyLinkedList.dir/Driver.cpp.i
 .PHONY : Driver.cpp.i
 
 Driver.s: Driver.cpp.s
@@ -150,7 +150,7 @@ Driver.s: Driver.cpp.s
 
 # target to generate assembly for a file
 Driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Driver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedList.dir/build.make CMakeFiles/DoublyLinkedList.dir/Driver.cpp.s
 .PHONY : Driver.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LinkedList"
+	@echo "... DoublyLinkedList"
 	@echo "... Driver.o"
 	@echo "... Driver.i"
 	@echo "... Driver.s"
